@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Jean Jean Inc.
+ * 
+ *
+ * @category   Laurent
+ * @package    Laurent_Sass
+ * @author     Laurent Clouet <laurent35240@gmail.com>
+ * @date       9/29/12
+ * @copyright  Copyright (c) 2012 Jean Jean Inc. (http://laurent-clouet.fr/)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0) 
+ */-->
+<config>
+    <modules>
+        <Laurent_Sass>
+            <version>1.1.4</version>
+        </Laurent_Sass>
+    </modules>
+    <global>
+        <cache>
+            <types>
+                <sass translate="label,description" module="sass">
+                    <label>Sass</label>
+                    <description>Compiled Sass files</description>
+                    <tags>SASS</tags>
+                </sass>
+            </types>
+        </cache>
+        <helpers>
+            <sass>
+                <class>Laurent_Sass_Helper</class>
+            </sass>
+        </helpers>
+        <models>
+            <core>
+                <rewrite>
+                    <design_package>Laurent_Sass_Model_Design_Package</design_package>
+                </rewrite>
+            </core>
+            <sass>
+                <class>Laurent_Sass_Model</class>
+            </sass>
+        </models>
+    </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <sass>
+                    <files>
+                        <default>Laurent_Sass.csv</default>
+                    </files>
+                </sass>
+            </modules>
+        </translate>
+    </adminhtml>
+    <default>
+        <dev>
+            <sass>
+                <output_style>nested</output_style>
+                <ruby_sass_command>sass</ruby_sass_command>
+            </sass>
+        </dev>
+    </default>
+</config>

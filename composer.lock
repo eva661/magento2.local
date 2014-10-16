@@ -1,65 +1,87 @@
 {
-    "hash": "422d9356ec6eaf2911d432358ac1cc2d",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "2b79645390d5376bf9ad1a6ce0b5fc4f",
     "packages": [
         {
-            "name": "richthegeek/phpsass",
-            "version": "dev-master",
+            "name": "magento-hackathon/magento-composer-installer",
+            "version": "1.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/richthegeek/phpsass",
-                "reference": "b07422c5fdae25dae1c93bb95d423a40ff250f8b"
+                "url": "git@bitbucket.org:vaimo/magento-composer-installer.git",
+                "reference": "1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/richthegeek/phpsass/archive/b07422c5fdae25dae1c93bb95d423a40ff250f8b.zip",
-                "reference": "b07422c5fdae25dae1c93bb95d423a40ff250f8b",
-                "shasum": ""
+                "url": "https://packages.vaimo.com/dist/magento-hackathon-magento-composer-installer-1.4-a26f83.zip",
+                "reference": "1.4",
+                "shasum": "a1edcbd796cde22a97deadb267ac179d8f211155"
             },
-            "time": "2012-12-15 22:18:35",
-            "type": "library",
-            "installation-source": "source",
+            "require-dev": {
+                "composer/composer": "*",
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "magento-hackathon/composer-command-integrator": "*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "composer-command-registry": [
+                    "MagentoHackathon\\Composer\\Magento\\Command\\DeployCommand"
+                ],
+                "class": "MagentoHackathon\\Composer\\Magento\\Installer"
+            },
             "autoload": {
-                "classmap": [
-                    "script/",
-                    "renderers/",
-                    "tree/",
-                    "SassException.php",
-                    "SassFile.php",
-                    "SassParser.php"
-                ]
+                "psr-0": {
+                    "MagentoHackathon\\Composer\\Magento": "src/"
+                }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-2-Clause"
+                "OSL-3.0"
             ],
             "authors": [
                 {
-                    "name": "Richard Lyon",
-                    "homepage": "https://github.com/richthegeek"
+                    "name": "Daniel Fahlke aka Flyingmana",
+                    "email": "daniel@digitalmanufaktur.com"
                 },
                 {
-                    "name": "Sebastian Siemssen",
-                    "homepage": "https://twitter.com/thefubhy"
+                    "name": "Jörg Weller",
+                    "email": "weller@flagbit.de"
                 },
                 {
-                    "name": "Steve Jones",
-                    "homepage": "https://github.com/darthsteven"
+                    "name": "Karl Spies",
+                    "email": "karl.spies@gmx.net"
                 },
                 {
-                    "name": "Sam Richard",
-                    "homepage": "https://github.com/snugug"
+                    "name": "Tobias Vogt",
+                    "email": "tobi@webguys.de"
+                },
+                {
+                    "name": "David Fuhr",
+                    "email": "fuhr@flagbit.de"
+                },
+                {
+                    "name": "Vinai Kopp",
+                    "email": "vinai@netzarbeiter.com"
                 }
             ],
-            "description": "PHPSass is a PHP compiler for SASS, a popular CSS pre-processor language.",
-            "homepage": "http://phpsass.com"
+            "description": "Composer installer for Magento modules",
+            "homepage": "https://github.com/magento-hackathon/magento-composer-installer",
+            "keywords": [
+                "composer-installer",
+                "magento"
+            ],
+            "time": "2013-08-01 14:01:25"
         }
     ],
-    "packages-dev": null,
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "richthegeek/phpsass": 20
-    }
+    "stability-flags": [],
+    "prefer-stable": false,
+    "platform": [],
+    "platform-dev": []
 }

@@ -1,13 +1,17 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Sites\/magento2\.local\/lib\/phpsass\/tests\/compact\.sass}line{font-family:\000031}}
 #main {
-	width: 15em;
-	color: blue; }
-#main p {
-	border-style: dotted;
-	border-width: 2px; }
-#main .cool { 
-	width: 100px; }
+  width: 15em;
+  color: blue; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Sites\/magento2\.local\/lib\/phpsass\/tests\/compact\.sass}line{font-family:\000034}}
+  #main p {
+    border-style: dotted;
+    border-width: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Sites\/magento2\.local\/lib\/phpsass\/tests\/compact\.sass}line{font-family:\000038}}
+  #main .cool {
+    width: 100px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Sites\/magento2\.local\/lib\/phpsass\/tests\/compact\.sass}line{font-family:\0000311}}
 #left {
-	font-size: 2em;
-	font-weight: bold;
-	float: left; }
+  font-size: 2em;
+  font-weight: bold;
+  float: left; }
